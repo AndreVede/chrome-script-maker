@@ -1,0 +1,17 @@
+{
+    "name": "scripts",
+    "version": "1.0.0",
+    "description": "chrome scripts",
+    "scripts": {
+        "build": "webpack --config webpack.config.js --mode production"
+    },
+    "author": "Zacharie André Aristide Boisnard",
+    "license": "MIT",
+    "devDependencies": {
+        "prettier": "^3.2.1",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.3.3",
+        "webpack": "^5.89.0",
+        "webpack-cli": "^5.1.4"
+    }
+}
