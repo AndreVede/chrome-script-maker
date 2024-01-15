@@ -1,8 +1,12 @@
 const getOne = () => {
-    const google = window.open('https://google.com');
-    google.addEventListener('load', () => {}, true);
+    const google: Window = window.open('https://google.com');
+    google.addEventListener<'load'>(
+        'load',
+        () => {
+            console.log('google charged');
+        },
+        true,
+    );
 };
 
 export default getOne;
-
-getOne();
