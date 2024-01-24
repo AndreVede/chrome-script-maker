@@ -3,11 +3,17 @@
     "version": "1.0.0",
     "description": "chrome scripts",
     "scripts": {
-        "build": "webpack --config webpack.config.js --mode production"
+        "build": "webpack --config webpack.config.js --mode production",
+        "watch": "webpack --config webpack.config.js --mode production --watch",
+        "eslint": "eslint src"
     },
     "author": "Zacharie André Aristide Boisnard",
     "license": "MIT",
     "devDependencies": {
+        "@types/eslint": "^8",
+        "@typescript-eslint/eslint-plugin": "^6.19.1",
+        "@typescript-eslint/parser": "^6.19.1",
+        "eslint": "^8.56.0",
         "prettier": "^3.2.1",
         "ts-loader": "^9.5.1",
         "typescript": "^5.3.3",
