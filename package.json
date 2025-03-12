@@ -1,23 +1,29 @@
 {
     "name": "scripts",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "chrome scripts",
     "scripts": {
-        "build": "webpack --config webpack.config.js --mode production",
-        "watch": "webpack --config webpack.config.js --mode production --watch",
-        "eslint": "eslint src"
+        "start": "bun run build",
+        "develop": "bun run build --watch",
+        "eslint": "eslint src",
+        "format": "prettier . --write"
     },
+    "private": true,
+    "type": "module",
     "author": "Zacharie André Aristide Boisnard",
     "license": "MIT",
     "devDependencies": {
-        "@types/eslint": "^8",
-        "@typescript-eslint/eslint-plugin": "^6.19.1",
-        "@typescript-eslint/parser": "^6.19.1",
-        "eslint": "^8.56.0",
-        "prettier": "^3.2.1",
-        "ts-loader": "^9.5.1",
-        "typescript": "^5.3.3",
-        "webpack": "^5.89.0",
-        "webpack-cli": "^5.1.4"
+        "@types/bun": "^1.2.5",
+        "@types/eslint": "^9.6.1",
+        "@types/rollup": "^0.54.0",
+        "@types/terser": "^3.12.0",
+        "@typescript-eslint/eslint-plugin": "^8.26.0",
+        "@typescript-eslint/parser": "^8.26.0",
+        "eslint": "9.21.0",
+        "jiti": "^2.4.2",
+        "prettier": "^3.5.3",
+        "terser": "^5.39.0",
+        "typescript": "^5.8.2",
+        "vite": "^6.2.1"
     }
 }
