@@ -26,6 +26,12 @@ console.log(`I'm working on:\n${scripts.join('\n')}\n`);
 
 // cleanup build dir
 const outDir = path.join(__dirname, 'build');
+
+// check if outDir exist and create it
+if (!fs.existsSync(outDir)) {
+    fs.mkdirSync(outDir);
+}
+
 const contentList = fs.readdirSync(outDir);
 for (const content of contentList) {
     fs.rm(
